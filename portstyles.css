@@ -75,6 +75,7 @@ main {
     padding: 0;
 }
 
+
 #projects p {
     width: 50%;
     margin: 25px auto;
@@ -134,4 +135,61 @@ main {
     font-size: 1.5rem;
     margin-bottom: 10px;
     color: purple;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+ .skillList {
+    display: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+footer {
+    display: none;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    #projects ul {
+        display: flex;
+        flex-direction: column;
+    }
+    #skills ul {
+        display: flex;
+        flex-direction: column;
+    }
+    header {
+        display: none;
+    }
+    footer {
+        display: block;
+    }
 }
